@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MaterialExampleModule } from 'src/material.module';
 import { HttpClient } from '@angular/common/http';
@@ -29,6 +29,7 @@ import { ToolbarComponent } from './core/components/header/toolbar/toolbar.compo
   bootstrap: [
     AppComponent,
     ToolbarComponent,
-  ]
+  ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }
