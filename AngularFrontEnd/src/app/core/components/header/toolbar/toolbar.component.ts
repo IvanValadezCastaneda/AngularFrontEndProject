@@ -1,5 +1,6 @@
 import { Component} from '@angular/core';
 import {MatIconModule} from '@angular/material/icon'
+import { SideNavComponent } from '../../side-nav/side-nav.component';
 
 @Component({
   selector: 'app-toolbar',
@@ -8,9 +9,9 @@ import {MatIconModule} from '@angular/material/icon'
 })
 
 export class ToolbarComponent{
-  constructor() {
-    // do nothing.
-}
-
+  
+  ShowMenu(){
+    
+  }
 
 }

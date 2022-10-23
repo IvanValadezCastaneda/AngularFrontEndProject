@@ -104,7 +104,68 @@
     -webkit-user-select: none;
     touch-action: manipulation;
 }
+.Toolbar-Darkmode{
+  flex: 1 1 auto;
+  display: none;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  color: #111;
+  cursor: pointer;
+  font-family: Inter,sans-serif;
+  font-size: 25px;
+  font-stretch: ultra-expanded;
+}
+.Toolbar-title:after {
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+}
+
 .Toolbar-container{
     display: grid;
     grid-template-columns: 1fr ;
+}
+
+.Menu-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  opacity: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: aliceblue;
+  transition: opacity 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#MenuButton:checked ~ .Menu-container {
+  opacity: 1;
+}
+
+.Menu-container div {
+  margin-top: 50px;
+  transition: margin 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#MenuButton:checked ~ .Menu-container div {
+  margin-top: 0px;
 }
