@@ -7,14 +7,16 @@
   }
   
   button {
-    border: 2px solid white;
+    border: 2px solid rgb(0, 0, 0);
     background: transparent;
     text-transform: uppercase;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 15px 50px;
     outline: none;
     overflow: hidden;
     position: relative;
+    border-radius: 8px;
+    box-sizing: border-box;
   }
   
   span {
@@ -30,7 +32,7 @@
       background: white;
       width: 50px;
       height: 125px;
-      opacity: 20%;
+      opacity: 80%;
       transform: rotate(-45deg);
   }
   

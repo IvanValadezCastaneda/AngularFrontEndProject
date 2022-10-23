@@ -9,9 +9,6 @@ import { SideNavComponent } from '../../side-nav/side-nav.component';
 })
 
 export class ToolbarComponent{
-  
-  ShowMenu(){
-    
+
   }
 
-}
