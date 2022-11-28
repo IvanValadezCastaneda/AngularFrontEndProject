@@ -9,6 +9,8 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HomePageComponent } from './core/components/home-page/home-page.component';
 import { SideNavComponent } from './core/components/side-nav/side-nav.component';
 import { ToolbarComponent } from './core/components/header/toolbar/toolbar.component';
+import { RequisicionesComponent } from './core/components/requisiciones/requisiciones.component';
+import { PlantasComponent } from './core/components/plantas/plantas.component';
 
 
 @NgModule({
@@ -16,7 +18,9 @@ import { ToolbarComponent } from './core/components/header/toolbar/toolbar.compo
     AppComponent,
     HomePageComponent,
     SideNavComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    RequisicionesComponent,
+    PlantasComponent
   ],
   imports: [
     BrowserModule,
