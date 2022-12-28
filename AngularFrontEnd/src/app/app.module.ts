@@ -11,6 +11,7 @@ import { SideNavComponent } from './core/components/side-nav/side-nav.component'
 import { ToolbarComponent } from './core/components/header/toolbar/toolbar.component';
 import { RequisicionesComponent } from './core/components/requisiciones/requisiciones.component';
 import { PlantasComponent } from './core/components/plantas/plantas.component';
+import { UserProfileComponent } from './core/components/user-profile/user-profile.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { PlantasComponent } from './core/components/plantas/plantas.component';
     SideNavComponent,
     ToolbarComponent,
     RequisicionesComponent,
-    PlantasComponent
+    PlantasComponent,
+    UserProfileComponent
   ],
   imports: [
     BrowserModule,
