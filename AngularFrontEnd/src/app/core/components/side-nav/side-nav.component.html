@@ -1,8 +1,13 @@
 <div class="Menu-container">
+    <router-outlet>
     <div>
-        <button> <h3>Requisiciones</h3></button>
+        <button [routerLink]="['/requisiciones']" role="button">
+        <h3>Requisiciones</h3>
+        </button>
     </div>
     <div>
-        <button> <h3>Plantas</h3></button>
+        <button [routerLink]="['/plantas']" role="button"> 
+        <h3>Plantas</h3></button>
     </div>
+    </router-outlet>
   </div>

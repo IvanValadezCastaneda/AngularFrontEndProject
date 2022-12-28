@@ -4,7 +4,9 @@ import { RequisicionesComponent } from './core/components/requisiciones/requisic
 import { PlantasComponent } from './core/components/plantas/plantas.component';
 
 const routes: Routes = [
-
+  { path: 'requisiciones', component: RequisicionesComponent },
+  { path: 'plantas', component: PlantasComponent },
+  { path: '', redirectTo: '/', pathMatch: 'full' }
 ];
 
 @NgModule({

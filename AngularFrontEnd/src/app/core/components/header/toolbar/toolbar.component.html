@@ -1,14 +1,14 @@
 <div class="Toolbar-container">
 <mat-toolbar class="Toolbar-banner">
-    <button  class="Toolbar-icons" role="button" id="MenuButton">
+    <button  class="Toolbar-icons" role="button" id="MenuButton" (click)="onMenuButtonClick()">
       <mat-icon>menu</mat-icon>
     </button>
     <span class="Toolbar-spacer"></span>
     <h1 class="Toolbar-title">APPLICATION</h1>
     <span class="Toolbar-spacer"></span>
-      <button class="Toolbar-icons" id="DarkModeButton">
+      <button class="Toolbar-icons" id="DarkModeButton" (click)="toggleDarkMode()">
         <mat-icon>dark_mode</mat-icon>
-        <h2 class="Toolbar-DarkMode"></h2>
+        <h2 class="Toolbar-DarkMode">Dark Mode</h2>
       </button>
     <button mat-icon-button class="Toolbar-icons" role="button">
       <mat-icon>person</mat-icon>
