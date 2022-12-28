@@ -5,7 +5,6 @@ import { NavService } from 'src/app/services/ShowSideNav';
 @Component({
   selector: 'app-toolbar',
   templateUrl: './toolbar.component.html',
-
 })
 
 export class ToolbarComponent {

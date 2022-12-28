@@ -1,3 +1,4 @@
+<body [class.Toolbar-Darkmode]="darkMode">
 <div class="Toolbar-container">
 <mat-toolbar class="Toolbar-banner">
     <button  class="Toolbar-icons" role="button" id="MenuButton" (click)="onMenuButtonClick()">
@@ -6,13 +7,13 @@
     <span class="Toolbar-spacer"></span>
     <h1 class="Toolbar-title">APPLICATION</h1>
     <span class="Toolbar-spacer"></span>
-      <button class="Toolbar-icons" id="DarkModeButton" (click)="toggleDarkMode()">
-        <mat-icon>dark_mode</mat-icon>
-        <h2 class="Toolbar-DarkMode">Dark Mode</h2>
-      </button>
+    <button class="Toolbar-icons" id="DarkModeButton" (click)="toggleDarkMode()">
+      <mat-icon>{{darkMode ? 'wb_sunny' : 'dark_mode'}}</mat-icon>
+      <h2 class="Toolbar-DarkMode">{{darkMode ? 'Light Mode' : 'Dark Mode'}}</h2>
+    </button>
     <button mat-icon-button class="Toolbar-icons" role="button">
       <mat-icon>person</mat-icon>
     </button>
 </mat-toolbar>
 </div>
-
+</body>

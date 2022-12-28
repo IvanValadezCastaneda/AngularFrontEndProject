@@ -107,23 +107,44 @@
     -webkit-user-select: none;
     touch-action: manipulation;
 }
-.Toolbar-Darkmode{
+.Toolbar-Darkmode {
   color: #fee6e3;
-  flex: 1 1 auto;
-  display: grid;
-  align-items: center;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
   background-color: #111;
-  cursor: pointer;
-  font-family: Inter,sans-serif;
-  font-size: 25px;
-  font-stretch: ultra-expanded;
 }
-
+.Toolbar-Darkmode .Toolbar-title {
+  background-color: #111;
+  border: 2px solid #fee6e3;
+  color: #fee6e3;
+}
+.Toolbar-Darkmode .Toolbar-title:after {
+  background-color: #111;
+  border: 2px solid #fee6e3;
+  color: #fee6e3;
+}
+.Toolbar-Darkmode .Toolbar-icons{
+  background-color: #111;
+  border: 2px solid #fee6e3;
+  color: #fee6e3;
+}
+.Toolbar-Darkmode .Toolbar-icons:after {
+  border: 2px solid #fee6e3;
+} 
+.Toolbar-Darkmode .Toolbar-title:after {
+  border: 2px solid #fee6e3;
+}
+.Toolbar-Darkmode .Toolbar-icons:active {
+  background-color: #111;
+}
+.Toolbar-Darkmode .Toolbar-icons:hover:after {
+  transform: translate(0, 0);
+}
+.Toolbar-Darkmode .Toolbar-banner{
+  color: #fee6e3;
+  z-index: 1;
+}
+.Toolbar-Darkmode  .Menu-container{
+  color: #fee6e3;
+}
 .Toolbar-title:after {
   background-color: #111;
   border-radius: 8px;
@@ -138,19 +159,21 @@
   transition: transform .2s ease-out;
   z-index: -1;
 }
-
 .Toolbar-container{
     display: grid;
     grid-template-columns: 1fr ;
 }
-
 .Menu-container{
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding-left: 2%;
   justify-content: space-around;
   position: absolute;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
   opacity: 1;
   width:90vw;
   height: 75vh;
@@ -161,6 +184,4 @@
   font-size: 24px;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
-  color: #000000;
 }
-

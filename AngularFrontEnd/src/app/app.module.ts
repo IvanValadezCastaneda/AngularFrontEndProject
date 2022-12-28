@@ -33,6 +33,9 @@ import { PlantasComponent } from './core/components/plantas/plantas.component';
   bootstrap: [
     AppComponent,
     ToolbarComponent,
+    SideNavComponent,
+    PlantasComponent,
+    RequisicionesComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
