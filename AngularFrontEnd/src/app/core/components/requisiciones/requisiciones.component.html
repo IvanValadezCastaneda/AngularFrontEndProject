@@ -1,27 +1,29 @@
 <table class="table">
   <thead>
     <tr>
-      <th  (click)="sortTable('number')">Number</th>
-      <th  (click)="sortTable('name')">Name</th>
-      <th  (click)="sortTable('phone')">Phone</th>
-      <th  (click)="sortTable('email')">Email</th>
-      <th  (click)="sortTable('address')">Address</th>
-      <th  (click)="sortTable('status')">Status</th>
+      <th class="table-header" (click)="sortTable('number')">Number</th>
+      <th class="table-header" (click)="sortTable('name')">Name</th>
+      <th class="table-header" (click)="sortTable('phone')">Phone</th>
+      <th class="table-header" (click)="sortTable('email')">Email</th>
+      <th class="table-header" (click)="sortTable('address')">Address</th>
+      <th class="table-header" (click)="sortTable('status')">Status</th>
     </tr>
   </thead>
-  <tbody>
-    <tr *ngFor="let row of rows" (click)="toggleRowDetails(row)">
-      <td>{{row.number}}</td>
-      <td>{{row.name}}</td>
-      <td>{{row.phone}}</td>
-      <td>{{row.email}}</td>
-      <td>{{row.address}}</td>
-      <td>{{row.status}}</td>
+  <tbody class="table-body">
+    <div >
+    <tr *ngFor="let row of rows" (click)="toggleRowDetails(row)" >
+      <td class="table-row" >{{row.number}}</td>
+      <td class="table-row">{{row.name}}</td>
+      <td class="table-row">{{row.phone}}</td>
+      <td class="table-row">{{row.email}}</td>
+      <td class="table-row">{{row.address}}</td>
+      <td class="table-row">{{row.status}}</td>
     </tr>
     <tr *ngFor="let row of rows" [hidden]="!row.showDetails">
       <td colspan="6">
         <!-- Add the details for the row here -->
       </td>
     </tr>
+  </div>
   </tbody>
 </table>
