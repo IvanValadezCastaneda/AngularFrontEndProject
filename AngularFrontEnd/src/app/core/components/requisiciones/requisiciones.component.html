@@ -1,18 +1,18 @@
+<body class="Menu-container">
 <table class="table">
-  <thead>
+  <thead >
     <tr>
       <th class="table-header" (click)="sortTable('number')">Number</th>
-      <th class="table-header" (click)="sortTable('name')">Name</th>
-      <th class="table-header" (click)="sortTable('phone')">Phone</th>
-      <th class="table-header" (click)="sortTable('email')">Email</th>
-      <th class="table-header" (click)="sortTable('address')">Address</th>
-      <th class="table-header" (click)="sortTable('status')">Status</th>
+      <th class="table-header"(click)="sortTable('name')">Name</th>
+      <th class="table-header"(click)="sortTable('phone')">Phone</th>
+      <th class="table-header"(click)="sortTable('email')">Email</th>
+      <th class="table-header"(click)="sortTable('address')">Address</th>
+      <th class="table-header"(click)="sortTable('status')">Status</th>
     </tr>
   </thead>
   <tbody class="table-body">
-    <div >
-    <tr *ngFor="let row of rows" (click)="toggleRowDetails(row)" >
-      <td class="table-row" >{{row.number}}</td>
+    <tr *ngFor="let row of rows" (click)="toggleRowDetails(row)">
+      <td class="table-row">{{row.number}}</td>
       <td class="table-row">{{row.name}}</td>
       <td class="table-row">{{row.phone}}</td>
       <td class="table-row">{{row.email}}</td>
@@ -24,6 +24,6 @@
         <!-- Add the details for the row here -->
       </td>
     </tr>
-  </div>
   </tbody>
 </table>
+</body>
