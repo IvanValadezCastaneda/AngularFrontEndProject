@@ -153,9 +153,22 @@
 
 .Toolbar-Darkmode .table-row{
   background-color: #111;
+  border: 3px solid #fee6e3;
+  color: #fee6e3;
+}
+
+.Toolbar-Darkmode .circle-1 {  
+  background-color: #111;
   border: 2px solid #fee6e3;
   color: #fee6e3;
 }
+.Toolbar-Darkmode .circle-2 {  
+  background-color: #111;
+  border: 3px solid #fee6e3;
+  color: #fee6e3;
+}
+.Toolbar-Darkmode
+.Toolbar-Darkmode
 
 .Toolbar-title:after {
   background-color: #111;
@@ -221,9 +234,9 @@
 }
 
 .circle {
-  width: 100px; /* Set the width of the circle */
-  height: 100px; /* Set the height of the circle */
-  border-radius: 90%; /* Make the circle circular */
+  width: 25%; 
+  height: 300px; 
+  border-radius: 90%; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -234,15 +247,29 @@
 }
 
 .circle:hover {
-  transform: scale(1.05); /* Increase the size of the circle by 5% on hover */
+  transform: scale(1.05);
 }
 
 .circle-1 {  
-  background-color: #520f52; /* Set the background color for the first circle */
+  background-color: #fee6e3;
+  border: 3px solid #111;
+  color: #111;
+  font-family: Inter,sans-serif;
+  font-size: 25px;
+  font-stretch: ultra-expanded;
+  letter-spacing: .2rem;
+
 }
 
 .circle-2 {
-  background-color: #79084d; /* Set the background color for the second circle */
+  background-color: #fee6e3;
+  border: 3px solid #111;
+  color: #111;
+  font-family: Inter,sans-serif;
+  font-size: 25px;
+  font-stretch: ultra-expanded;
+  letter-spacing: .2rem;
+
 }
 
 .circles-container {
