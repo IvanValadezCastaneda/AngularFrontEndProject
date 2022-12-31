@@ -145,6 +145,18 @@
 .Toolbar-Darkmode  .Menu-container{
   color: #fee6e3;
 }
+.Toolbar-Darkmode .table-header{
+  background-color: #111;
+  border: 2px solid #fee6e3;
+  color: #fee6e3;
+}
+
+.Toolbar-Darkmode .table-row{
+  background-color: #111;
+  border: 2px solid #fee6e3;
+  color: #fee6e3;
+}
+
 .Toolbar-title:after {
   background-color: #111;
   border-radius: 8px;
@@ -207,3 +219,35 @@
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.circle {
+  width: 100px; /* Set the width of the circle */
+  height: 100px; /* Set the height of the circle */
+  border-radius: 90%; /* Make the circle circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #111;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.circle:hover {
+  transform: scale(1.05); /* Increase the size of the circle by 5% on hover */
+}
+
+.circle-1 {  
+  background-color: #520f52; /* Set the background color for the first circle */
+}
+
+.circle-2 {
+  background-color: #79084d; /* Set the background color for the second circle */
+}
+
+.circles-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row; 
+}
+

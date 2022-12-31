@@ -4,11 +4,6 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-plantas',
   templateUrl: './plantas.component.html',
 })
-export class PlantasComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+export class PlantasComponent{
 
 }
