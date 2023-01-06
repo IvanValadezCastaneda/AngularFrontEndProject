@@ -12,6 +12,7 @@ import { ToolbarComponent } from './core/components/header/toolbar/toolbar.compo
 import { RequisicionesComponent } from './core/components/requisiciones/requisiciones.component';
 import { PlantasComponent } from './core/components/plantas/plantas.component';
 import { UserProfileComponent } from './core/components/user-profile/user-profile.component';
+import { CrearRequisicionComponent } from './core/components/crear-requisicion/crear-requisicion.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { UserProfileComponent } from './core/components/user-profile/user-profil
     ToolbarComponent,
     RequisicionesComponent,
     PlantasComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    CrearRequisicionComponent
   ],
   imports: [
     BrowserModule,
