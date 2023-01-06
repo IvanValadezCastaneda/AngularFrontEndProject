@@ -18,7 +18,6 @@ export class CrearRequisicionComponent{
   readonly addRowButton: HTMLElement | null = document.getElementById('addRowButton');
 
   constructor() {
-    // bind event listeners
     this.bindEventListeners();
   }
 
@@ -38,27 +37,18 @@ export class CrearRequisicionComponent{
       });
     }
 
-    // complete button event listener
-    /*
-    const completeButton = document.getElementById('completeButton');
-    if (completeButton) {
-      completeButton.addEventListener('click', () => {
-        this.complete();
-      });
-    }
-    */
   }
 
   private addRow(): void {
     if (this.addRowButton instanceof HTMLElement) {
       (this.addRowButton as HTMLElement).addEventListener('click', () => {
-        // get the table body element
+
         const tableBody = document.querySelector('tbody');
       
-        // create a new table row element
+
         const newRow = document.createElement('tr');
       
-        // create table cells for the new row
+
         const numberCell = document.createElement('th');
         numberCell.scope = 'row';
         const numberInput = document.createElement('input');
@@ -129,36 +119,35 @@ export class CrearRequisicionComponent{
     // get the data for the table
     const tableData = this.getTableData();
 
-    // add the table to the PDF
+
     autoTable(doc, {
       head: [['Number', 'Description', 'Brand', 'Seller', 'Price']],
       body: tableData
     });
-    // save the PDF
+
     doc.save(`Work Order - FOLIO ${folio}.pdf`);
   }
   
   private getTableData(): any[][] {
-    // get the rows of the table
+
     if (this.tableBody) {
       const rows = Array.from(this.tableBody.querySelectorAll('tr'));
   
-      // create an array to store the data for the table
+
       const tableData = [];
   
       for (const row of rows) {
-        // create an array to store the data for the current row
+
         const rowData = [];
   
-        // get the cells of the current row
+
         const cells = Array.from(row.querySelectorAll('td'));
   
-        // add the data from each cell to the row data array
+
         for (const cell of cells) {
           rowData.push(cell.textContent);
         }
   
-        // add the row data array to the table data array
         tableData.push(rowData);
       }
   
