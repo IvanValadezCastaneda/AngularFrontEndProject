@@ -2,15 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { jsPDF } from 'jspdf';
 import autoTable from 'jspdf-autotable';
 
-
-
-
-
-
 @Component({
   selector: 'app-crear-requisicion',
   templateUrl: './crear-requisicion.component.html',
 })
+
 export class CrearRequisicionComponent{
 
   

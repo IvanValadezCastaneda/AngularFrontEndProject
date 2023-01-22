@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+
 .AngularBody{
   background-color: #f8eae8;
 }
@@ -278,3 +279,48 @@
   flex-direction: row; 
 }
 
+.user-info-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+.user-info-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.user-info-row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.user-info-label-wrapper {
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1%;
+}
+
+.user-info-label-wrapper label {
+  font-size: calc(14px + 0.3vw);
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+.user-info-label-wrapper input {
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 1%;
+  text-align: center;
+  font-size: calc(14px + 0.3vw);
+  transition: font-size 0.3s ease-in-out;
+}
+
+.user-info-label-wrapper input:hover {
+  font-size: calc(16px + 0.3vw);
+}
