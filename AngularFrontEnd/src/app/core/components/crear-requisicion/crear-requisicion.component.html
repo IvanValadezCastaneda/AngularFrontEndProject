@@ -1,39 +1,48 @@
 <body class="Menu-container">
-<form>
-    <div class="form-group">
+  <form>
+  <table class="table">
+    <td><div>
       <label for="nameInput">Name</label>
-      <input type="text" class="form-control" id="nameInput" placeholder="Enter name">
-    </div>
-    <div class="form-group">
+      <input type="text" id="nameInput" placeholder="Enter name">
+    </div></td>
+    <td><div class="RequisicionInput-group">
       <label for="surnameInput">Surname</label>
-      <input type="text" class="form-control" id="surnameInput" placeholder="Enter surname">
-    </div>
-    <div class="form-group">
+      <input type="text" id="surnameInput" placeholder="Enter surname">
+    </div> </td>
+    <td><div class="RequisicionInput-group">
       <label for="employeeNumberInput">Employee Number</label>
-      <input type="text" class="form-control" id="employeeNumberInput" placeholder="Enter employee number">
-    </div>
-    <div class="form-group">
+      <input type="text" id="employeeNumberInput" placeholder="Enter employee number">
+    </div></td>
+  </table>
+
+  <table class="table">
+    <td><div class="RequisicionInput-group">
       <label for="folioInput">FOLIO</label>
-      <input type="text" class="form-control" id="folioInput" placeholder="FOLIO will be generated automatically" disabled>
-    </div>
-    <div class="form-group">
+      <input type="text" id="folioInput" placeholder="FOLIO will be generated automatically" disabled>
+    </div></td>
+  </table>
+
+  <table class="table">
+    <td><div class="RequisicionInput-group">
       <label for="projectInput">Project</label>
       <select class="form-control" id="projectInput">
-        <option>Mantenimiento</option>
-        <option>Trenes</option>
-        <option>Interno</option>
+        <option *ngFor="let Project of Projects" [value]="Project.value">{{Project.viewValue}}</option>
         <option>Add new project</option>
       </select>
-    </div>
-    <div class="form-group">
+    </div></td>
+    <td><div class="RequisicionInput-group">
       <label for="areaInput">Area</label>
-      <input type="text" class="form-control" id="areaInput" placeholder="Enter area">
-    </div>
-    <div class="form-group">
+      <input type="text" id="areaInput" placeholder="Enter area">
+    </div></td>
+    <td><div class="RequisicionInput-group">
       <label for="plantInput">Plant</label>
-      <input type="text" class="form-control" id="plantInput" placeholder="Enter plant">
-    </div>
-    <hr>
+      <input type="text" id="plantInput" placeholder="Enter plant">
+    </div></td>
+  </table>
+  </form>
+
+<hr>
+
     <table class="table">
       <thead>
         <tr>
@@ -84,7 +93,9 @@
     </select>
     </div>
     <button type="button" class="btn btn-primary" id="generatePDFButton">Generate PDF</button>
-    <hr>
+
+<hr>
+
     <div class="form-group">
     <label for="emailInput">Email(s) to send order to:</label>
     <select multiple class="form-control" id="emailInput">
@@ -94,27 +105,6 @@
         <!-- additional email options can be added here if needed -->
     </select>
     </div>
-    <button type="submit" class="btn btn-success" id="completeButton">Complete</button>
-    </form>
 
-    <!-- popup modal for successful submission -->
-    <div class="modal" tabindex="-1" role="dialog" id="successModal">
-    <div class="modal-dialog" role="document">
-    <div class="modal-content">
-        <div class="modal-header">
-        <h5 class="modal-title">Order Number</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
-        </div>
-        <div class="modal-body">
-        <p id="orderNumber">FOLIO number</p>
-        <p><i class="fas fa-check"></i></p>
-        </div>
-        <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-    </div>
-    </div>
-    </div>
+    <button type="submit" class="btn btn-success" id="completeButton">Complete</button>
 </body>

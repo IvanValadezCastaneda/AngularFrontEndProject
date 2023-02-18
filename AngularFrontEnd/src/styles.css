@@ -151,6 +151,9 @@
   border: 2px solid #fee6e3;
   color: #fee6e3;
 }
+.Toolbar-Darkmode .user-info-label-wrapper input {
+  border: 2px solid #fee6e3;
+}
 
 .Toolbar-Darkmode .table-row{
   background-color: #111;
