@@ -3,6 +3,11 @@
 .AngularBody{
   background-color: #f8eae8;
 }
+.RequisicionInput-group{
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
 .toolbar-spacer {
     flex: 1 1 auto;
 }
@@ -129,7 +134,7 @@
 }
 .Toolbar-Darkmode .Toolbar-icons:after {
   border: 2px solid #fee6e3;
-} 
+}
 .Toolbar-Darkmode .Toolbar-title:after {
   border: 2px solid #fee6e3;
 }
@@ -161,12 +166,12 @@
   color: #fee6e3;
 }
 
-.Toolbar-Darkmode .circle-1 {  
+.Toolbar-Darkmode .circle-1 {
   background-color: #111;
   border: 2px solid #fee6e3;
   color: #fee6e3;
 }
-.Toolbar-Darkmode .circle-2 {  
+.Toolbar-Darkmode .circle-2 {
   background-color: #111;
   border: 3px solid #fee6e3;
   color: #fee6e3;
@@ -238,9 +243,9 @@
 }
 
 .circle {
-  width: 25%; 
-  height: 300px; 
-  border-radius: 90%; 
+  width: 25%;
+  height: 300px;
+  border-radius: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -254,7 +259,7 @@
   transform: scale(1.05);
 }
 
-.circle-1 {  
+.circle-1 {
   background-color: #fee6e3;
   border: 3px solid #111;
   color: #111;
@@ -279,7 +284,7 @@
 .circles-container {
   display: flex;
   justify-content: space-between;
-  flex-direction: row; 
+  flex-direction: row;
 }
 
 .user-info-buttons {

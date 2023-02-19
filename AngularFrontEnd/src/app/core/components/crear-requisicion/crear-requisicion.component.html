@@ -1,45 +1,50 @@
 <body class="Menu-container">
-  <form>
   <table class="table">
     <td><div>
-      <label for="nameInput">Name</label>
+      <mat-form-field class="RequisicionInput-group">
+      <mat-label for="nameInput">Name</mat-label>
       <input type="text" id="nameInput" placeholder="Enter name">
-    </div></td>
-    <td><div class="RequisicionInput-group">
-      <label for="surnameInput">Surname</label>
+    </mat-form-field></div></td>
+    <td><div>
+      <mat-form-field class="RequisicionInput-group">
+      <mat-label for="surnameInput">Surname</mat-label>
       <input type="text" id="surnameInput" placeholder="Enter surname">
-    </div> </td>
-    <td><div class="RequisicionInput-group">
-      <label for="employeeNumberInput">Employee Number</label>
+    </mat-form-field></div> </td>
+    <td><div>
+      <mat-form-field class="RequisicionInput-group">
+      <mat-label for="employeeNumberInput">Employee Number</mat-label>
       <input type="text" id="employeeNumberInput" placeholder="Enter employee number">
-    </div></td>
+    </mat-form-field></div></td>
   </table>
 
   <table class="table">
-    <td><div class="RequisicionInput-group">
-      <label for="folioInput">FOLIO</label>
+    <td><div>
+      <mat-form-field class="RequisicionInput-group">
+      <mat-label for="folioInput">Folio</mat-label>
       <input type="text" id="folioInput" placeholder="FOLIO will be generated automatically" disabled>
-    </div></td>
+    </mat-form-field></div></td>
   </table>
 
   <table class="table">
-    <td><div class="RequisicionInput-group">
-      <label for="projectInput">Project</label>
+    <td><div>
+      <mat-form-field class="RequisicionInput-group">
+      <mat-label for="projectInput">Project</mat-label>
       <select class="form-control" id="projectInput">
         <option *ngFor="let Project of Projects" [value]="Project.value">{{Project.viewValue}}</option>
         <option>Add new project</option>
       </select>
-    </div></td>
-    <td><div class="RequisicionInput-group">
-      <label for="areaInput">Area</label>
+    </mat-form-field></div></td>
+    <td><div>
+      <mat-form-field class="RequisicionInput-group">
+      <mat-label for="areaInput">Area</mat-label>
       <input type="text" id="areaInput" placeholder="Enter area">
-    </div></td>
-    <td><div class="RequisicionInput-group">
-      <label for="plantInput">Plant</label>
+    </mat-form-field></div></td>
+    <td><div>
+      <mat-form-field class="RequisicionInput-group">
+      <mat-label for="plantInput">Plant</mat-label>
       <input type="text" id="plantInput" placeholder="Enter plant">
-    </div></td>
+    </mat-form-field></div></td>
   </table>
-  </form>
 
 <hr>
 
@@ -86,7 +91,7 @@
     </table>
     <button type="button" class="btn btn-secondary" id="addRowButton">Add Row</button>
     <div class="form-group">
-    <label for="currencyInput">Currency</label>
+    <mat-label for="currencyInput">Currency</mat-label>
     <select class="form-control" id="currencyInput">
         <option>MXN</option>
         <option>USD</option>
@@ -97,7 +102,7 @@
 <hr>
 
     <div class="form-group">
-    <label for="emailInput">Email(s) to send order to:</label>
+    <mat-label for="emailInput">Email(s) to send order to:</mat-label>
     <select multiple class="form-control" id="emailInput">
         <option>email1@example.com</option>
         <option>email2@example.com</option>
