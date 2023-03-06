@@ -1,0 +1,57 @@
+.user-photo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .user-photo-wrapper {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  
+  .user-photo-wrapper img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  p, .user-photo-container{
+    justify-content: center;
+    padding-left: 10%;
+  }
+  
+  .user-photo-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .user-photo-overlay:hover {
+    opacity: 1;
+  }
+  
+  .user-photo-label {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .user-photo-overlay i {
+    color: #ffffff;
+    font-size: 24px;
+  }
+  

@@ -113,6 +113,35 @@
     -webkit-user-select: none;
     touch-action: manipulation;
 }
+
+.user-info-container {
+  color: #111;
+  font-family: Inter,sans-serif;
+  max-width: 100%;
+  padding: 0 25px;
+  font-weight: bold;
+}
+
+.user-photo-wrapper{
+  align-items: center;
+  justify-items: center;
+  image-rendering: auto;
+  
+}
+
+input, .user-info-container{
+  color: #111;
+  font-family: Inter,sans-serif;
+}
+
+.Toolbar-Darkmode .user-info-container {
+  color: #fee6e3;
+  font-family: Inter,sans-serif;
+  max-width: 100%;
+  padding: 0 25px;
+  font-weight: bold;
+}
+
 .Toolbar-Darkmode {
   color: #fee6e3;
   background-color: #111;
